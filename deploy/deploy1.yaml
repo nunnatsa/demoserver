@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-server
+  labels:
+    app: my-server
+spec:
+  containers:
+  - name: my-server
+    image: quay.io/nunnatsa/demoserver:v1
+    ports:
+    - containerPort: 8080
